@@ -1,0 +1,187 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Thu Dec 23 13:59:25 2021
+| Host         : MECHREVO-Bill running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
+| Design       : Top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   109 |
+|    Minimum number of control sets                        |   109 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   216 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   109 |
+| >= 0 to < 4        |     9 |
+| >= 4 to < 6        |    16 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |    37 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    43 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             104 |           43 |
+| No           | No                    | Yes                    |               4 |            2 |
+| No           | Yes                   | No                     |               8 |            1 |
+| Yes          | No                    | No                     |            1514 |          677 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             538 |          163 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------+-------------------------------------------+-------------------------------+------------------+----------------+--------------+
+|              Clock Signal             |               Enable Signal               |        Set/Reset Signal       | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------------------------+-------------------------------------------+-------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG                        | writer/tx_i_1_n_0                         |                               |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                        | reader/rx_reg_55_out                      |                               |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                        | reader/rx_reg_015_out                     |                               |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                        | reader/rx_reg_113_out                     |                               |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                        | reader/rx_reg_71_out                      |                               |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                        | reader/rx_reg_39_out                      |                               |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                        | reader/rx_reg_211_out                     |                               |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                        | reader/rx_reg_63_out                      |                               |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                        | reader/rx_reg_47_out                      |                               |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                        |                                           | translator_reset_reg_n_0      |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG                        | reader/rx_cnt[3]_i_1_n_0                  |                               |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG                        | calculator/string_iterator[0]_i_1_n_0     | calculator/num_top[4]_i_1_n_0 |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG                        | translator/ans[60]_i_2_n_0                | translator/clear              |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG                        | tx_data                                   | calculator_reset              |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG                        | input_iterator                            | calculator_reset              |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG                        | calculator/num_top[4]_i_2_n_0             | calculator/num_top[4]_i_1_n_0 |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG                        | writer/tx_rd0                             |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG                        | writer/tx_cnt0                            |                               |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG                        | translator/ans[12]_i_1_n_0                | translator/clear              |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG                        | translator/ans[20]_i_1_n_0                | translator/clear              |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG                        | translator/ans[44]_i_1_n_0                | translator/clear              |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG                        | translator/ans[52]_i_1_n_0                | translator/clear              |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG                        | translator/ans[36]_i_1_n_0                | translator/clear              |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG                        | translator/ans[4]_i_1_n_0                 | translator/clear              |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG                        | translator/ans[28]_i_1_n_0                | translator/clear              |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG                        | calculator/len[0]_i_1_n_0                 | calculator/num_top[4]_i_1_n_0 |                2 |              6 |         3.00 |
+|  calculator/next_state_reg[5]_i_2_n_0 |                                           |                               |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG                        | input_array[10][7]_i_1_n_0                |                               |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                        |                                           | calculator_reset_reg_n_0      |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG                        | input_array[24][7]_i_1_n_0                |                               |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                        | input_array[1][7]_i_1_n_0                 |                               |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                        | input_array[20][7]_i_1_n_0                |                               |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG                        | input_array[16][7]_i_1_n_0                |                               |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                        | input_array[18][7]_i_1_n_0                |                               |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                        | input_array[23][7]_i_1_n_0                |                               |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG                        | input_array[13][7]_i_1_n_0                |                               |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                        | reader/rx_data[7]_i_1_n_0                 |                               |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG                        | input_array[14][7]_i_1_n_0                |                               |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                        | calculator/c[7]_i_1_n_0                   | calculator/num_top[4]_i_1_n_0 |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                        | input_array[12][7]_i_1_n_0                |                               |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                        | input_array[21][7]_i_1_n_0                |                               |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                        | input_array[2][7]_i_1_n_0                 |                               |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                        | input_array[3][7]_i_1_n_0                 |                               |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                        | input_array[28][7]_i_1_n_0                |                               |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                        | input_array[29][7]_i_1_n_0                |                               |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                        | input_array[4][7]_i_1_n_0                 |                               |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG                        | input_array[11][7]_i_1_n_0                |                               |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG                        | input_array[15][7]_i_1_n_0                |                               |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                        | input_array[9][7]_i_1_n_0                 |                               |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                        | input_array[19][7]_i_1_n_0                |                               |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                        | input_array[0][7]_i_1_n_0                 |                               |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG                        | input_array[27][7]_i_1_n_0                |                               |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                        | output_iterator                           | calculator_reset              |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                        | translator/sel                            | translator/clear              |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG                        | input_array[17][7]_i_1_n_0                |                               |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                        | input_array[5][7]_i_1_n_0                 |                               |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                        | input_array[31][7]_i_1_n_0                |                               |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG                        | input_array[25][7]_i_1_n_0                |                               |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG                        | input_array[6][7]_i_1_n_0                 |                               |                5 |              8 |         1.60 |
+|  clk_IBUF_BUFG                        | input_array[22][7]_i_1_n_0                |                               |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG                        | input_array[7][7]_i_1_n_0                 |                               |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG                        | input_array[26][7]_i_1_n_0                |                               |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                        | input_array[30][7]_i_1_n_0                |                               |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG                        | input_array[8][7]_i_1_n_0                 |                               |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                        | calculator/where_after_push_op_stack      |                               |                2 |             12 |         6.00 |
+|  next_state                           |                                           |                               |                5 |             13 |         2.60 |
+|  clk_IBUF_BUFG                        | translator/stack[4][28]_i_1_n_0           |                               |               12 |             29 |         2.42 |
+|  clk_IBUF_BUFG                        | translator/stack[20][28]_i_1_n_0          |                               |               18 |             29 |         1.61 |
+|  clk_IBUF_BUFG                        | translator/stack[12][28]_i_1_n_0          |                               |               13 |             29 |         2.23 |
+|  clk_IBUF_BUFG                        | translator/stack[2][28]_i_1_n_0           |                               |               12 |             29 |         2.42 |
+|  clk_IBUF_BUFG                        | translator/stack[29][28]_i_1_n_0          |                               |               18 |             29 |         1.61 |
+|  clk_IBUF_BUFG                        | translator/stack[19][28]_i_1_n_0          |                               |               21 |             29 |         1.38 |
+|  clk_IBUF_BUFG                        | translator/stack[28][28]_i_1_n_0          |                               |               13 |             29 |         2.23 |
+|  clk_IBUF_BUFG                        | translator/stack[26][28]_i_1_n_0          |                               |               16 |             29 |         1.81 |
+|  clk_IBUF_BUFG                        | translator/stack[6][28]_i_1_n_0           |                               |               18 |             29 |         1.61 |
+|  clk_IBUF_BUFG                        | translator/stack[8][28]_i_1_n_0           |                               |               10 |             29 |         2.90 |
+|  clk_IBUF_BUFG                        | translator/stack[9][28]_i_1_n_0           |                               |               17 |             29 |         1.71 |
+|  clk_IBUF_BUFG                        | translator/stack[7][28]_i_1_n_0           |                               |               12 |             29 |         2.42 |
+|  clk_IBUF_BUFG                        | translator/stack[3][28]_i_1_n_0           |                               |               12 |             29 |         2.42 |
+|  clk_IBUF_BUFG                        | translator/stack[5][28]_i_1_n_0           |                               |               11 |             29 |         2.64 |
+|  clk_IBUF_BUFG                        | translator/stack[18][28]_i_1_n_0          |                               |               17 |             29 |         1.71 |
+|  clk_IBUF_BUFG                        | translator/stack[22][28]_i_1_n_0          |                               |               20 |             29 |         1.45 |
+|  clk_IBUF_BUFG                        | translator/stack[17][28]_i_1_n_0          |                               |               16 |             29 |         1.81 |
+|  clk_IBUF_BUFG                        | translator/stack[13][28]_i_1_n_0          |                               |               14 |             29 |         2.07 |
+|  clk_IBUF_BUFG                        | translator/stack[11][28]_i_1_n_0          |                               |               14 |             29 |         2.07 |
+|  clk_IBUF_BUFG                        | translator/stack[10][28]_i_1_n_0          |                               |               14 |             29 |         2.07 |
+|  clk_IBUF_BUFG                        | translator/stack[16][28]_i_1_n_0          |                               |               19 |             29 |         1.53 |
+|  clk_IBUF_BUFG                        | translator/stack[1][28]_i_1_n_0           |                               |               15 |             29 |         1.93 |
+|  clk_IBUF_BUFG                        | translator/stack[15][28]_i_1_n_0          |                               |               17 |             29 |         1.71 |
+|  clk_IBUF_BUFG                        | translator/stack[23][28]_i_1_n_0          |                               |               19 |             29 |         1.53 |
+|  clk_IBUF_BUFG                        | translator/stack[24][28]_i_1_n_0          |                               |               16 |             29 |         1.81 |
+|  clk_IBUF_BUFG                        | translator/stack[25][28]_i_1_n_0          |                               |               16 |             29 |         1.81 |
+|  clk_IBUF_BUFG                        | translator/stack[30][28]_i_1_n_0          |                               |               15 |             29 |         1.93 |
+|  clk_IBUF_BUFG                        | translator/stack[31][28]_i_1_n_0          |                               |               13 |             29 |         2.23 |
+|  clk_IBUF_BUFG                        | translator/stack[27][28]_i_1_n_0          |                               |               16 |             29 |         1.81 |
+|  clk_IBUF_BUFG                        | translator/stack[21][28]_i_1_n_0          |                               |               19 |             29 |         1.53 |
+|  clk_IBUF_BUFG                        | translator/stack[14][28]_i_1_n_0          |                               |               15 |             29 |         1.93 |
+|  clk_IBUF_BUFG                        | calculator/num[31]_i_2_n_0                | calculator/num[31]_i_1_n_0    |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG                        | calculator/op_top[31]_i_1_n_0             | calculator/num_top[4]_i_1_n_0 |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG                        | calculator/p_0_out_i_2_n_0                | calculator/num_top[4]_i_1_n_0 |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG                        | calculator/p_0_out_i_1_n_0                | calculator/num_top[4]_i_1_n_0 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG                        | calculator/ans[31]_i_1_n_0                | calculator/num_top[4]_i_1_n_0 |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG                        | translator/top[0]_i_1_n_0                 | translator/clear              |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG                        | translator/stack[0][31]_i_1_n_0           |                               |               20 |             32 |         1.60 |
+|  clk_IBUF_BUFG                        | output_array                              |                               |                6 |             40 |         6.67 |
+|  clk_IBUF_BUFG                        | calculator/stack_num_reg_0_31_0_0_i_2_n_0 |                               |                8 |             64 |         8.00 |
+|  clk_IBUF_BUFG                        |                                           |                               |               36 |             85 |         2.36 |
+|  clk_IBUF_BUFG                        | input_data                                | calculator_reset              |               69 |            256 |         3.71 |
+|  clk_IBUF_BUFG                        | calculator/in[15][7]_i_1_n_0              |                               |               87 |            256 |         2.94 |
++---------------------------------------+-------------------------------------------+-------------------------------+------------------+----------------+--------------+
+
+

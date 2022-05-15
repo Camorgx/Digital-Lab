@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1639048778">
+  <File Type="RCFI_FILE" Name="four.rcfi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="four_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-RPX" Name="four_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="four_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="four_methodology_drc_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="four_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="four_postroute_physopt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="four_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="four_postplace_pwropt.dcp"/>
+  <File Type="PWROPT-DCP" Name="four_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="four_placed.dcp"/>
+  <File Type="OPT-DCP" Name="four_opt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="four_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="four_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="four_timing_summary_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="four.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="four.sysdef"/>
+  <File Type="BITSTR-MMI" Name="four.mmi"/>
+  <File Type="BITSTR-BMM" Name="four_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="four.nky"/>
+  <File Type="BITSTR-RBT" Name="four.rbt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="four_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="four_reports.tcl"/>
+  <File Type="RBD_FILE" Name="four.rbd"/>
+  <File Type="BITSTR-MSK" Name="four.msk"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="four_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="four.tcl"/>
+  <File Type="ROUTE-TIMING-PB" Name="four_timing_summary_routed.pb"/>
+  <File Type="OPT-DRC" Name="four_drc_opted.rpt"/>
+  <File Type="NPI_FILE" Name="four.npi"/>
+  <File Type="BG-BIN" Name="four.bin"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="four_timing_summary_routed.rpt"/>
+  <File Type="RNPI_FILE" Name="four.rnpi"/>
+  <File Type="BG-BGN" Name="four.bgn"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="four_routed_bb.dcp"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="four.vdi"/>
+  <File Type="CFI_FILE" Name="four.cfi"/>
+  <File Type="BG-DRC" Name="four.drc"/>
+  <File Type="ROUTE-ERROR-DCP" Name="four_routed_error.dcp"/>
+  <File Type="PDI-FILE" Name="four.pdi"/>
+  <File Type="BG-BIT" Name="four.bit"/>
+  <File Type="ROUTE-STATUS-PB" Name="four_route_status.pb"/>
+  <File Type="OPT-HWDEF" Name="four.hwdef"/>
+  <File Type="PLACE-IO" Name="four_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="four_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="four_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="four_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="four_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="four_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="four_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="four_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="four_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="four_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="four_route_status.rpt"/>
+  <File Type="ROUTE-DCP" Name="four_routed.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/four.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="four"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/four.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

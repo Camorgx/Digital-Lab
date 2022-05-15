@@ -1,0 +1,8 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+D:/Source/Vivado Projects/Calculator/Calculator.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+D:/Source/Vivado Projects/Calculator/src/Top.v,1640228006,verilog,,,,Top,,,,,,,,
+D:/Source/Vivado Projects/Calculator/src/rx.v,1640171145,verilog,,D:/Source/Vivado Projects/Calculator/src/tx.v,,Reader,,,,,,,,
+D:/Source/Vivado Projects/Calculator/src/tx.v,1640171072,verilog,,D:/Source/Vivado Projects/Calculator/src/Top.v,,Writer,,,,,,,,

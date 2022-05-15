@@ -1,0 +1,11 @@
+0.7
+2020.2
+Jul 28 2021
+13:32:51
+D:/Source/Vivado Projects/20211111/20211111.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+D:/Source/Vivado Projects/20211111/20211111.srcs/sim_1/new/2.v,1636613822,verilog,,,,two,,,,,,,,
+D:/Source/Vivado Projects/20211111/20211111.srcs/sim_1/new/3.v,1636614359,verilog,,,,three,,,,,,,,
+D:/Source/Vivado Projects/20211111/20211111.srcs/sim_1/new/4.v,1636615844,verilog,,,,four,,,,,,,,
+D:/Source/Vivado Projects/20211111/20211111.srcs/sources_1/new/1.v,1636616143,verilog,,,,one,,,,,,,,
+D:/Source/Vivado Projects/20211111/20211111.srcs/sources_1/new/d_ff_r.v,1636614169,verilog,,D:/Source/Vivado Projects/20211111/20211111.srcs/sim_1/new/3.v,,d_ff_r,,,,,,,,
+D:/Source/Vivado Projects/20211111/20211111.srcs/sources_1/new/decoder_3_8.v,1636616609,verilog,,D:/Source/Vivado Projects/20211111/20211111.srcs/sim_1/new/4.v,,decoder_3_8,,,,,,,,
