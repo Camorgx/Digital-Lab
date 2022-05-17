@@ -1,55 +1,1622 @@
 #-----------------------------------------------------------
 # Vivado v2021.2 (64-bit)
-# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Tue Jan 18 12:33:53 2022
-# Process ID: 4075
-# Current directory: /home/bill/Source/Vivado Projects/Calculator/Calculator.runs/impl_1
-# Command line: vivado -log Top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Top.tcl -notrace
-# Log file: /home/bill/Source/Vivado Projects/Calculator/Calculator.runs/impl_1/Top.vdi
-# Journal file: /home/bill/Source/Vivado Projects/Calculator/Calculator.runs/impl_1/vivado.jou
-# Running On: mechrevo-bill, OS: Linux, CPU Frequency: 2300.000 MHz, CPU Physical cores: 8, Host memory: 16603 MB
+# Start of session at: Tue May 17 15:07:10 2022
+# Process ID: 5380
+# Current directory: C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.runs/impl_1
+# Command line: vivado.exe -log Top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Top.tcl -notrace
+# Log file: C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.runs/impl_1/Top.vdi
+# Journal file: C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.runs/impl_1\vivado.jou
+# Running On: MECHREVO-BILL, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 68621 MB
 #-----------------------------------------------------------
 source Top.tcl -notrace
-Command: open_checkpoint Top_routed.dcp
-
-Starting open_checkpoint Task
-
-Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2602.441 ; gain = 5.938 ; free physical = 8152 ; free virtual = 13898
+Command: link_design -top Top -part xc7a100tcsg324-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2602.523 ; gain = 0.000 ; free physical = 8674 ; free virtual = 14446
-INFO: [Netlist 29-17] Analyzing 731 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1246.477 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 734 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Constraints 18-5435] Cannot read file, the software version for the checkpoint (2021.1.3247384) does not match the current software version (2021.2.3367213).
-  File : /home/bill/Source/Vivado Projects/Calculator/Calculator.runs/impl_1/Top_routed/Top.xbdc.
-Parsing XDC File [/home/bill/Source/Vivado Projects/Calculator/Calculator.runs/impl_1/Top_routed/Top.xdc]
-Finished Parsing XDC File [/home/bill/Source/Vivado Projects/Calculator/Calculator.runs/impl_1/Top_routed/Top.xdc]
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.22 . Memory (MB): peak = 2602.523 ; gain = 0.000 ; free physical = 8560 ; free virtual = 14345
-Restored from archive | CPU: 0.230000 secs | Memory: 6.785446 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.22 . Memory (MB): peak = 2602.523 ; gain = 0.000 ; free physical = 8560 ; free virtual = 14345
+Parsing XDC File [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'd[0]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'd[1]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'd[2]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'd[3]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2602.523 ; gain = 0.000 ; free physical = 8236 ; free virtual = 14037
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1246.477 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 35 instances were transformed.
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 1 instance 
   RAM32X1D => RAM32X1D (RAMD32(x2)): 34 instances
 
-INFO: [Project 1-604] Checkpoint was created with Vivado v2021.1 (64-bit) build 3247384
-open_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2602.523 ; gain = 11.957 ; free physical = 8236 ; free virtual = 14037
+7 Infos, 24 Warnings, 24 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1246.477 ; gain = 0.000
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.769 . Memory (MB): peak = 1246.477 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 16eb6586f
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1385.164 ; gain = 138.688
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-1287] Pulled Inverter translator/ans[58]_i_212 into driver instance translator/ans[58]_i_11, which resulted in an inversion of 70 pins
+INFO: [Opt 31-1287] Pulled Inverter translator/ans[58]_i_4 into driver instance translator/state[1]_i_16, which resulted in an inversion of 74 pins
+INFO: [Opt 31-1287] Pulled Inverter writer/tx_cnt[4]_i_1 into driver instance writer/tx_cnt[4]_i_3, which resulted in an inversion of 2 pins
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 269c734c9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.283 . Memory (MB): peak = 1684.520 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 10 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 1795ff7a7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.320 . Memory (MB): peak = 1684.520 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 19a5ad84d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.393 . Memory (MB): peak = 1684.520 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 19a5ad84d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.471 . Memory (MB): peak = 1684.520 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 19a5ad84d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.477 . Memory (MB): peak = 1684.520 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 19a5ad84d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.486 . Memory (MB): peak = 1684.520 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |              10  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1684.520 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1731e73cf
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.645 . Memory (MB): peak = 1684.520 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 1731e73cf
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1684.520 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1731e73cf
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1684.520 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1684.520 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1731e73cf
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1684.520 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+27 Infos, 24 Warnings, 24 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1684.520 ; gain = 438.043
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1684.520 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.runs/impl_1/Top_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file Top_drc_opted.rpt -pb Top_drc_opted.pb -rpx Top_drc_opted.rpx
+Command: report_drc -file Top_drc_opted.rpt -pb Top_drc_opted.pb -rpx Top_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.runs/impl_1/Top_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1725.684 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 12a61d2cd
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1725.684 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1725.684 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: cf094aa5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.371 . Memory (MB): peak = 1725.684 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1c4b53594
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1725.684 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1c4b53594
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1725.684 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1c4b53594
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1725.684 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1a849cd2e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1725.684 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 161dbe624
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1725.684 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 161dbe624
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1725.684 ; gain = 0.000
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 2 LUTNM shape to break, 47 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 1, two critical 1, total 2, new lutff created 1
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 18 nets or LUTs. Breaked 2 LUTs, combined 16 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1725.684 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            2  |             16  |                    18  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            2  |             16  |                    18  |           0  |           9  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.1 Physical Synthesis In Placer | Checksum: c228013e
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1725.684 ; gain = 0.000
+Phase 2.4 Global Placement Core | Checksum: 13c3d308f
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1725.684 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 13c3d308f
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1725.684 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 17f8c524e
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1725.684 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1fa546ce5
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1725.684 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 26d47daab
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 1725.684 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 242d6a649
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 1725.684 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 1e871dc11
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 1725.684 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 228791b18
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 1725.684 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 191e54e1a
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1725.684 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 1c4fd532f
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1725.684 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 108b07c08
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 1725.684 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 108b07c08
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 1725.684 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 100e797bb
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-75.566 | TNS=-10386.561 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1438866a8
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.142 . Memory (MB): peak = 1726.008 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 604a7571
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.153 . Memory (MB): peak = 1726.008 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 100e797bb
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:14 . Memory (MB): peak = 1726.008 ; gain = 0.324
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-75.178. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: e000f755
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:25 . Memory (MB): peak = 1726.008 ; gain = 0.324
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:25 . Memory (MB): peak = 1726.008 ; gain = 0.324
+Phase 4.1 Post Commit Optimization | Checksum: e000f755
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:25 . Memory (MB): peak = 1726.008 ; gain = 0.324
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: e000f755
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:25 . Memory (MB): peak = 1726.008 ; gain = 0.324
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                2x2|
+|___________|___________________|___________________|
+|      South|                1x1|                1x1|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: e000f755
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:25 . Memory (MB): peak = 1726.008 ; gain = 0.324
+Phase 4.3 Placer Reporting | Checksum: e000f755
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:25 . Memory (MB): peak = 1726.008 ; gain = 0.324
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1726.008 ; gain = 0.000
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:25 . Memory (MB): peak = 1726.008 ; gain = 0.324
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 118ddbba4
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:25 . Memory (MB): peak = 1726.008 ; gain = 0.324
+Ending Placer Task | Checksum: bc6e1ad0
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:25 . Memory (MB): peak = 1726.008 ; gain = 0.324
+INFO: [Common 17-83] Releasing license: Implementation
+69 Infos, 24 Warnings, 24 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:26 . Memory (MB): peak = 1726.008 ; gain = 1.324
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.363 . Memory (MB): peak = 1726.027 ; gain = 0.020
+INFO: [Common 17-1381] The checkpoint 'C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.runs/impl_1/Top_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file Top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1726.027 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_placed.rpt -pb Top_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file Top_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1726.027 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 1.00s |  WALL: 0.81s
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1726.027 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-75.430 | TNS=-10383.419 |
+Phase 1 Physical Synthesis Initialization | Checksum: 162d4690a
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.563 . Memory (MB): peak = 1726.027 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-75.430 | TNS=-10383.419 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 162d4690a
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.613 . Memory (MB): peak = 1726.027 ; gain = 0.000
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-75.430 | TNS=-10383.419 |
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0/DPO. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net calculator/a[0]. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net calculator/a[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-75.409 | TNS=-10382.159 |
+INFO: [Physopt 32-81] Processed net calculator/a[0]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net calculator/a[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-75.408 | TNS=-10382.099 |
+INFO: [Physopt 32-702] Processed net calculator/a[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_6_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_15_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_19_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_30_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_46_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_67_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_93_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_124_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_160_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_203_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_1_1_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_20_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_31_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_47_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_68_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_94_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_125_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_161_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_206_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_2_2_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_1_1_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_25_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_36_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_52_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_73_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_99_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_130_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_166_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_209_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_3_3_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_2_2_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_1_1_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_41_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_57_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_78_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_104_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_135_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_171_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_210_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_4_4_i_4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_3_3_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_2_2_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_1_1_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_62_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_83_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_109_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_140_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_176_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_215_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_5_5_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_4_4_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_3_3_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_2_2_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_1_1_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_88_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_114_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_145_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_181_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_6_6_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_5_5_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_4_4_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_3_3_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_2_2_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_1_1_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_119_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_150_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_186_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_221_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_7_7_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_6_6_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_5_5_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_4_4_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_3_3_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_2_2_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_1_1_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_155_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_191_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_224_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_8_8_i_4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_7_7_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_6_6_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_5_5_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_4_4_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_3_3_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_2_2_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_1_1_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_196_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_9_9_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_8_8_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_7_7_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_6_6_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_5_5_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_4_4_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_3_3_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_2_2_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_1_1_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_1_1_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_10_10_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_9_9_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_8_8_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_7_7_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_6_6_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_5_5_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_4_4_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_3_3_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_2_2_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_2_2_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_11_11_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_10_10_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_9_9_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_8_8_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_7_7_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_6_6_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_5_5_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_4_4_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_3_3_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_3_3_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_12_12_i_4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_11_11_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_10_10_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_9_9_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_8_8_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_7_7_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_6_6_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_5_5_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_4_4_i_42_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_4_4_i_49_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_13_13_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_12_12_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_11_11_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_10_10_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_9_9_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_8_8_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_7_7_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_6_6_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_5_5_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_14_14_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_13_13_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_12_12_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_11_11_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_10_10_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_9_9_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_8_8_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_7_7_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_6_6_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_6_6_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_15_15_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_14_14_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_13_13_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_12_12_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_11_11_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_10_10_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_9_9_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_8_8_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_7_7_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_16_16_i_4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_15_15_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_14_14_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_13_13_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_12_12_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_11_11_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_10_10_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_9_9_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_8_8_i_42_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_8_8_i_49_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_17_17_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_16_16_i_10_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_15_15_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_14_14_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_13_13_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_12_12_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_11_11_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_10_10_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_9_9_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_9_9_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_18_18_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_17_17_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_16_16_i_16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_15_15_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_14_14_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_13_13_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_12_12_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_11_11_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_10_10_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_10_10_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_19_19_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_18_18_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_17_17_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_16_16_i_21_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_15_15_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_14_14_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_13_13_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_12_12_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_11_11_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_11_11_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_20_20_i_4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_19_19_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_18_18_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_17_17_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_16_16_i_26_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_15_15_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_14_14_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_13_13_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_12_12_i_42_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_21_21_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_20_20_i_10_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_19_19_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_18_18_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_17_17_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_16_16_i_31_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_15_15_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_14_14_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_13_13_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_13_13_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_22_22_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_21_21_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_20_20_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_19_19_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_18_18_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_17_17_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_16_16_i_36_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_15_15_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_14_14_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 12 pins.
+INFO: [Physopt 32-735] Processed net calculator/stack_num_reg_0_31_14_14_i_44_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-75.192 | TNS=-10372.163 |
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_14_14_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_23_23_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_22_22_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_21_21_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_20_20_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_19_19_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_18_18_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_17_17_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_16_16_i_41_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_15_15_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_15_15_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_24_24_i_4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_23_23_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_22_22_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_21_21_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_20_20_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_19_19_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_18_18_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_17_17_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_16_16_i_46_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_16_16_i_53_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_25_25_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_24_24_i_10_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_23_23_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_22_22_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_21_21_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_20_20_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_19_19_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_18_18_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_17_17_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_26_26_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_25_25_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_24_24_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_23_23_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_22_22_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_21_21_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_20_20_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_19_19_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 15 pins.
+INFO: [Physopt 32-735] Processed net calculator/stack_num_reg_0_31_19_19_i_41_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-75.141 | TNS=-10369.409 |
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_18_18_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 12 pins.
+INFO: [Physopt 32-735] Processed net calculator/stack_num_reg_0_31_18_18_i_44_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-75.049 | TNS=-10364.442 |
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_18_18_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_27_27_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_26_26_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_25_25_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_24_24_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_23_23_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_22_22_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_21_21_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_20_20_i_42_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_19_19_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 12 pins.
+INFO: [Physopt 32-735] Processed net calculator/stack_num_reg_0_31_19_19_i_44_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-74.861 | TNS=-10353.913 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 15 pins.
+INFO: [Physopt 32-735] Processed net calculator/stack_num_reg_0_31_20_20_i_51_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-74.764 | TNS=-10348.481 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 12 pins.
+INFO: [Physopt 32-735] Processed net calculator/stack_num_reg_0_31_19_19_i_43_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-74.652 | TNS=-10342.210 |
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_28_28_i_4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_27_27_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_26_26_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_25_25_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_24_24_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_23_23_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_22_22_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_21_21_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_20_20_i_47_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 12 pins.
+INFO: [Physopt 32-735] Processed net calculator/stack_num_reg_0_31_20_20_i_53_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-74.601 | TNS=-10339.251 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 12 pins.
+INFO: [Physopt 32-735] Processed net calculator/stack_num_reg_0_31_20_20_i_54_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-74.415 | TNS=-10328.464 |
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_20_20_i_53_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_29_29_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_28_28_i_10_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_27_27_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_26_26_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_25_25_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_24_24_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_23_23_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_22_22_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 15 pins.
+INFO: [Physopt 32-735] Processed net calculator/stack_num_reg_0_31_22_22_i_40_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-74.331 | TNS=-10323.423 |
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_21_21_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_21_21_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_30_30_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_29_29_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_28_28_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_27_27_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_26_26_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_25_25_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_24_24_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_23_23_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_22_22_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 11 pins.
+INFO: [Physopt 32-735] Processed net calculator/stack_num_reg_0_31_22_22_i_44_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-74.160 | TNS=-10313.163 |
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_31_31_i_3_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_30_30_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_29_29_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_28_28_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_27_27_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_26_26_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_25_25_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_24_24_i_42_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_23_23_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_23_23_i_45_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0/DPO. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/a[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_6_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_203_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_1_1_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_206_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_2_2_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_209_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_3_3_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_210_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_4_4_i_4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_215_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_5_5_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_6_6_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_221_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_7_7_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_224_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_8_8_i_4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_9_9_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_1_1_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_10_10_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_2_2_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_11_11_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_3_3_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_12_12_i_4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_4_4_i_49_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_13_13_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_14_14_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_6_6_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_15_15_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_16_16_i_4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_8_8_i_49_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_17_17_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_9_9_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_18_18_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_10_10_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_19_19_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_11_11_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_20_20_i_4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_21_21_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_13_13_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_22_22_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_14_14_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_23_23_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_15_15_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_24_24_i_4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_16_16_i_53_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_25_25_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_26_26_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_18_18_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_27_27_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_28_28_i_4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_20_20_i_53_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_29_29_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_21_21_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_30_30_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_31_31_i_3_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_23_23_i_45_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-74.160 | TNS=-10313.163 |
+Phase 3 Critical Path Optimization | Checksum: 162d4690a
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1726.027 ; gain = 0.000
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-74.160 | TNS=-10313.163 |
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0/DPO. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/a[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_6_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_15_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_19_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_30_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_46_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_67_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_93_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_124_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_160_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_203_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_1_1_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_20_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_31_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_47_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_68_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_94_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_125_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_161_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_206_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_2_2_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_1_1_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_25_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_36_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_52_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_73_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_99_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_130_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_166_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_209_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_3_3_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_2_2_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_1_1_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_41_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_57_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_78_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_104_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_135_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_171_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_210_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_4_4_i_4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_3_3_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_2_2_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_1_1_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_62_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_83_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_109_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_140_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_176_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_215_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_5_5_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_4_4_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_3_3_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_2_2_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_1_1_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_88_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_114_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_145_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_181_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_6_6_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_5_5_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_4_4_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_3_3_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_2_2_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_1_1_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_119_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_150_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_186_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_221_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_7_7_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_6_6_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_5_5_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_4_4_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_3_3_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_2_2_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_1_1_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_155_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_191_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_224_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_8_8_i_4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_7_7_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_6_6_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_5_5_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_4_4_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_3_3_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_2_2_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_1_1_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_196_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_9_9_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_8_8_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_7_7_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_6_6_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_5_5_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_4_4_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_3_3_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_2_2_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_1_1_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_1_1_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_10_10_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_9_9_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_8_8_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_7_7_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_6_6_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_5_5_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_4_4_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_3_3_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_2_2_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_2_2_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_11_11_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_10_10_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_9_9_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_8_8_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_7_7_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_6_6_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_5_5_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_4_4_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_3_3_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_3_3_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_12_12_i_4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_11_11_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_10_10_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_9_9_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_8_8_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_7_7_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_6_6_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_5_5_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_4_4_i_42_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_4_4_i_49_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_13_13_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_12_12_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_11_11_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_10_10_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_9_9_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_8_8_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_7_7_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_6_6_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_5_5_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_14_14_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_13_13_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_12_12_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_11_11_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_10_10_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_9_9_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_8_8_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_7_7_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_6_6_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_6_6_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_15_15_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_14_14_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_13_13_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_12_12_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_11_11_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_10_10_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_9_9_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_8_8_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_7_7_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_16_16_i_4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_15_15_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_14_14_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_13_13_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_12_12_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_11_11_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_10_10_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_9_9_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_8_8_i_42_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_8_8_i_49_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_17_17_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_16_16_i_10_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_15_15_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_14_14_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_13_13_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_12_12_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_11_11_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_10_10_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_9_9_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_9_9_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_18_18_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_17_17_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_16_16_i_16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_15_15_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_14_14_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_13_13_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_12_12_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_11_11_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_10_10_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_10_10_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_19_19_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_18_18_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_17_17_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_16_16_i_21_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_15_15_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_14_14_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_13_13_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_12_12_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_11_11_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_11_11_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_20_20_i_4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_19_19_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_18_18_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_17_17_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_16_16_i_26_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_15_15_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_14_14_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_13_13_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_12_12_i_42_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_21_21_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_20_20_i_10_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_19_19_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_18_18_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_17_17_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_16_16_i_31_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_15_15_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_14_14_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_13_13_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_13_13_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_22_22_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_21_21_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_20_20_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_19_19_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_18_18_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_17_17_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_16_16_i_36_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_15_15_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_14_14_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_14_14_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_23_23_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_22_22_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_21_21_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_20_20_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_19_19_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_18_18_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_17_17_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_16_16_i_41_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_15_15_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_15_15_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_24_24_i_4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_23_23_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_22_22_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_21_21_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_20_20_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_19_19_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_18_18_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_17_17_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_16_16_i_46_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_16_16_i_53_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_25_25_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_24_24_i_10_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_23_23_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_22_22_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_21_21_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_20_20_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_19_19_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_18_18_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_17_17_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_26_26_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_25_25_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_24_24_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_23_23_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_22_22_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_21_21_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_20_20_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_19_19_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_18_18_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_18_18_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_27_27_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_26_26_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_25_25_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_24_24_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_23_23_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_22_22_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_21_21_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_20_20_i_42_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_19_19_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_28_28_i_4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_27_27_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_26_26_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_25_25_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_24_24_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_23_23_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_22_22_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_21_21_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_20_20_i_47_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_20_20_i_53_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_29_29_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_28_28_i_10_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_27_27_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_26_26_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_25_25_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_24_24_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_23_23_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_22_22_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_21_21_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_21_21_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_30_30_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_29_29_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_28_28_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_27_27_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_26_26_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_25_25_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_24_24_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_23_23_i_32_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_22_22_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_31_31_i_3_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_30_30_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_29_29_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_28_28_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_27_27_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_26_26_i_22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_25_25_i_27_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_24_24_i_42_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_23_23_i_37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_23_23_i_45_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0/DPO. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/a[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_6_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_203_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_1_1_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_206_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_2_2_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_209_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_3_3_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_210_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_4_4_i_4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_215_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_5_5_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_6_6_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_221_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_7_7_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_224_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_8_8_i_4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_9_9_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_1_1_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_10_10_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_2_2_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_11_11_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_3_3_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_12_12_i_4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_4_4_i_49_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_13_13_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_14_14_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_6_6_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_15_15_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_16_16_i_4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_8_8_i_49_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_17_17_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_9_9_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_18_18_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_10_10_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_19_19_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_11_11_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_20_20_i_4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_21_21_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_13_13_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_22_22_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_14_14_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_23_23_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_15_15_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_24_24_i_4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_16_16_i_53_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_25_25_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_26_26_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_18_18_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_27_27_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_28_28_i_4_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_20_20_i_53_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_29_29_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_21_21_i_44_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_30_30_i_3_n_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_31_31_i_3_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_23_23_i_45_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net calculator/stack_num_reg_0_31_0_0_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clk. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-74.160 | TNS=-10313.163 |
+Phase 4 Critical Path Optimization | Checksum: 162d4690a
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1726.027 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1726.027 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-74.160 | TNS=-10313.163 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          1.270  |         70.256  |            4  |              0  |                    12  |           0  |           2  |  00:00:06  |
+|  Total          |          1.270  |         70.256  |            4  |              0  |                    12  |           0  |           3  |  00:00:06  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1726.027 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 19a00662d
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1726.027 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+879 Infos, 24 Warnings, 24 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1726.027 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.370 . Memory (MB): peak = 1740.191 ; gain = 14.164
+INFO: [Common 17-1381] The checkpoint 'C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.runs/impl_1/Top_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 91dc6609 ConstDB: 0 ShapeSum: 1b5a1920 RouteDB: 0
+Post Restoration Checksum: NetGraph: 5a1df9c6 NumContArr: 27b85c1c Constraints: 0 Timing: 0
+Phase 1 Build RT Design | Checksum: 81d655e2
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1868.727 ; gain = 119.465
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 81d655e2
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1868.727 ; gain = 119.465
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 81d655e2
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1874.746 ; gain = 125.484
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 81d655e2
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1874.746 ; gain = 125.484
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 21d27dbbe
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 1900.562 ; gain = 151.301
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-71.805| TNS=-9930.892| WHS=-0.169 | THS=-42.357|
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00165383 %
+  Global Horizontal Routing Utilization  = 0.00184712 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 5370
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 5346
+  Number of Partially Routed Nets     = 24
+  Number of Node Overlaps             = 25
+
+Phase 2 Router Initialization | Checksum: 228da5701
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:24 . Memory (MB): peak = 1911.777 ; gain = 162.516
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 228da5701
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:24 . Memory (MB): peak = 1911.777 ; gain = 162.516
+Phase 3 Initial Routing | Checksum: 1b8987cec
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:25 . Memory (MB): peak = 1911.777 ; gain = 162.516
+INFO: [Route 35-580] Design has 12 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++==============+===============+==========================+
+| Launch Clock | Capture Clock | Pin                      |
++==============+===============+==========================+
+| sys_clk_pin  | sys_clk_pin   | translator/ans_reg[27]/D |
+| sys_clk_pin  | sys_clk_pin   | translator/ans_reg[11]/D |
+| sys_clk_pin  | sys_clk_pin   | translator/ans_reg[35]/D |
+| sys_clk_pin  | sys_clk_pin   | translator/ans_reg[59]/D |
+| sys_clk_pin  | sys_clk_pin   | translator/ans_reg[51]/D |
++--------------+---------------+--------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 805
+ Number of Nodes with overlaps = 72
+ Number of Nodes with overlaps = 15
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-77.396| TNS=-20200.774| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: f3907938
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:29 . Memory (MB): peak = 1911.777 ; gain = 162.516
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 393
+ Number of Nodes with overlaps = 90
+ Number of Nodes with overlaps = 17
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-77.296| TNS=-19728.030| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1d4d09222
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:30 . Memory (MB): peak = 1911.777 ; gain = 162.516
+Phase 4 Rip-up And Reroute | Checksum: 1d4d09222
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:30 . Memory (MB): peak = 1911.777 ; gain = 162.516
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 12f356c4e
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:31 . Memory (MB): peak = 1911.777 ; gain = 162.516
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-77.296| TNS=-19674.631| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 1d5df6925
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 1933.738 ; gain = 184.477
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1d5df6925
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 1933.738 ; gain = 184.477
+Phase 5 Delay and Skew Optimization | Checksum: 1d5df6925
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 1933.738 ; gain = 184.477
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 18e8c14d4
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 1933.738 ; gain = 184.477
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-77.296| TNS=-18040.153| WHS=0.054  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 15a120029
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 1933.738 ; gain = 184.477
+Phase 6 Post Hold Fix | Checksum: 15a120029
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 1933.738 ; gain = 184.477
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.433 %
+  Global Horizontal Routing Utilization  = 1.25199 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 39.6396%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 64.8649%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 52.9412%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 50%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 1e2c9deb9
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 1933.738 ; gain = 184.477
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1e2c9deb9
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 1933.738 ; gain = 184.477
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 184183d2d
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:33 . Memory (MB): peak = 1933.738 ; gain = 184.477
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-77.296| TNS=-18040.153| WHS=0.054  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 184183d2d
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:33 . Memory (MB): peak = 1933.738 ; gain = 184.477
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:33 . Memory (MB): peak = 1933.738 ; gain = 184.477
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+898 Infos, 25 Warnings, 24 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:34 . Memory (MB): peak = 1933.738 ; gain = 193.547
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.458 . Memory (MB): peak = 1933.738 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.runs/impl_1/Top_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file Top_drc_routed.rpt -pb Top_drc_routed.pb -rpx Top_drc_routed.rpx
+Command: report_drc -file Top_drc_routed.rpt -pb Top_drc_routed.pb -rpx Top_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.runs/impl_1/Top_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file Top_methodology_drc_routed.rpt -pb Top_methodology_drc_routed.pb -rpx Top_methodology_drc_routed.rpx
+Command: report_methodology -file Top_methodology_drc_routed.rpt -pb Top_methodology_drc_routed.pb -rpx Top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.runs/impl_1/Top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file Top_power_routed.rpt -pb Top_power_summary_routed.pb -rpx Top_power_routed.rpx
+Command: report_power -file Top_power_routed.rpt -pb Top_power_summary_routed.pb -rpx Top_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+910 Infos, 25 Warnings, 24 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file Top_route_status.rpt -pb Top_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file Top_timing_summary_routed.rpt -pb Top_timing_summary_routed.pb -rpx Top_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file Top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file Top_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file Top_bus_skew_routed.rpt -pb Top_bus_skew_routed.pb -rpx Top_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
 Command: write_bitstream -force Top.bit
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
 Running DRC as a precondition to command write_bitstream
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.2/data/ip'.
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
 WARNING: [DRC CFGBVS-1] Missing CFGBVS and CONFIG_VOLTAGE Design Properties: Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
 
  set_property CFGBVS value1 [current_design]
@@ -69,7 +1636,7 @@ WARNING: [DRC PDRC-153] Gated clock check: Net calculator/next_state_reg[5]_i_2_
 WARNING: [DRC PDRC-153] Gated clock check: Net next_state is a gated clock net sourced by a combinational pin FSM_onehot_next_state_reg[12]_i_1/O, cell FSM_onehot_next_state_reg[12]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 INFO: [Vivado 12-3199] DRC finished with 0 Errors, 9 Warnings
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
-INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
 Loading data files...
 Loading site data...
 Loading route data...
@@ -80,7 +1647,7 @@ Writing bitstream ./Top.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
 INFO: [Common 17-83] Releasing license: Implementation
-21 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+12 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 3147.160 ; gain = 544.637 ; free physical = 8070 ; free virtual = 13889
-INFO: [Common 17-206] Exiting Vivado at Tue Jan 18 12:34:17 2022...
+write_bitstream: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 2418.129 ; gain = 470.562
+INFO: [Common 17-206] Exiting Vivado at Tue May 17 15:09:00 2022...

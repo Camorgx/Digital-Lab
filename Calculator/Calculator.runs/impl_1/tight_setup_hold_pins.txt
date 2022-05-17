@@ -1,0 +1,16 @@
++==============+===============+===============================+
+| Launch Clock | Capture Clock | Pin                           |
++==============+===============+===============================+
+| sys_clk_pin  | sys_clk_pin   | translator/ans_reg[27]/D      |
+| sys_clk_pin  | sys_clk_pin   | translator/ans_reg[11]/D      |
+| sys_clk_pin  | sys_clk_pin   | translator/ans_reg[35]/D      |
+| sys_clk_pin  | sys_clk_pin   | translator/ans_reg[59]/D      |
+| sys_clk_pin  | sys_clk_pin   | translator/ans_reg[51]/D      |
+| sys_clk_pin  | sys_clk_pin   | translator/ans_reg[43]/D      |
+| sys_clk_pin  | sys_clk_pin   | translator/ans_reg[3]/D       |
+| sys_clk_pin  | sys_clk_pin   | translator/ans_reg[19]/D      |
+| sys_clk_pin  | sys_clk_pin   | translator/stack_reg[0][19]/D |
+| sys_clk_pin  | sys_clk_pin   | translator/stack_reg[0][18]/D |
+| sys_clk_pin  | sys_clk_pin   | translator/stack_reg[0][23]/D |
+| sys_clk_pin  | sys_clk_pin   | translator/stack_reg[0][26]/D |
++--------------+---------------+-------------------------------+

@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue May 17 14:18:33 2022
+# Process ID: 3308
+# Current directory: C:/Users/18213/Sources/Digital_Lab/Calculator
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16652 C:\Users\18213\Sources\Digital_Lab\Calculator\Calculator.xpr
+# Log file: C:/Users/18213/Sources/Digital_Lab/Calculator/vivado.log
+# Journal file: C:/Users/18213/Sources/Digital_Lab/Calculator\vivado.jou
+# Running On: MECHREVO-BILL, OS: Windows, CPU Frequency: 2304 MHz, CPU Physical cores: 8, Host memory: 68621 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.xpr
+update_compile_order -fileset sources_1
+file mkdir C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1
+file mkdir C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new
+close [ open C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc w ]
+add_files -fileset constrs_1 C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc
+set_property is_enabled false [get_files  C:/Users/18213/Sources/Digital_Lab/Calculator/src/fpgaol_uart.xdc]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1

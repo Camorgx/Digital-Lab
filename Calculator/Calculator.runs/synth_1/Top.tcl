@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "D:/Source/Vivado Projects/Calculator/Calculator.runs/synth_1/Top.tcl"
+  variable script "C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.runs/synth_1/Top.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,27 +70,26 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 4
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {D:/Source/Vivado Projects/Calculator/Calculator.cache/wt} [current_project]
-set_property parent.project_path {D:/Source/Vivado Projects/Calculator/Calculator.xpr} [current_project]
+set_property webtalk.parent_dir C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.cache/wt [current_project]
+set_property parent.project_path C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo {d:/Source/Vivado Projects/Calculator/Calculator.cache/ip} [current_project]
+set_property ip_output_repo c:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  {D:/Source/Vivado Projects/Calculator/src/Calculator.v}
-  {D:/Source/Vivado Projects/Calculator/src/Translator.v}
-  {D:/Source/Vivado Projects/Calculator/src/rx.v}
-  {D:/Source/Vivado Projects/Calculator/src/tx.v}
-  {D:/Source/Vivado Projects/Calculator/src/Top.v}
+  C:/Users/18213/Sources/Digital_Lab/Calculator/src/Calculator.v
+  C:/Users/18213/Sources/Digital_Lab/Calculator/src/Translator.v
+  C:/Users/18213/Sources/Digital_Lab/Calculator/src/rx.v
+  C:/Users/18213/Sources/Digital_Lab/Calculator/src/tx.v
+  C:/Users/18213/Sources/Digital_Lab/Calculator/src/Top.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -101,8 +100,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{D:/Source/Vivado Projects/Calculator/src/fpgaol_uart.xdc}}
-set_property used_in_implementation false [get_files {{D:/Source/Vivado Projects/Calculator/src/fpgaol_uart.xdc}}]
+read_xdc C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc
+set_property used_in_implementation false [get_files C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

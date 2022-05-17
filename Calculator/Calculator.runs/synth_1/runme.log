@@ -4,9 +4,9 @@
 
 
 
-****** Vivado v2021.1 (64-bit)
-  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
-  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
     ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 
 source Top.tcl -notrace
@@ -17,90 +17,166 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 17852
+INFO: [Synth 8-7075] Helper process launched with PID 11080
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1129.562 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1244.961 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'Top' [D:/Source/Vivado Projects/Calculator/src/Top.v:3]
-INFO: [Synth 8-6157] synthesizing module 'Reader' [D:/Source/Vivado Projects/Calculator/src/rx.v:25]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Source/Vivado Projects/Calculator/src/rx.v:101]
-INFO: [Synth 8-6155] done synthesizing module 'Reader' (1#1) [D:/Source/Vivado Projects/Calculator/src/rx.v:25]
-INFO: [Synth 8-6157] synthesizing module 'Writer' [D:/Source/Vivado Projects/Calculator/src/tx.v:22]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Source/Vivado Projects/Calculator/src/tx.v:112]
-INFO: [Synth 8-6155] done synthesizing module 'Writer' (2#1) [D:/Source/Vivado Projects/Calculator/src/tx.v:22]
-INFO: [Synth 8-6157] synthesizing module 'Calculator' [D:/Source/Vivado Projects/Calculator/src/Calculator.v:3]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Source/Vivado Projects/Calculator/src/Calculator.v:97]
-WARNING: [Synth 8-151] case item 6'b001110 is unreachable [D:/Source/Vivado Projects/Calculator/src/Calculator.v:149]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Source/Vivado Projects/Calculator/src/Calculator.v:149]
+INFO: [Synth 8-6157] synthesizing module 'Top' [C:/Users/18213/Sources/Digital_Lab/Calculator/src/Top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Reader' [C:/Users/18213/Sources/Digital_Lab/Calculator/src/rx.v:25]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/18213/Sources/Digital_Lab/Calculator/src/rx.v:101]
+INFO: [Synth 8-6155] done synthesizing module 'Reader' (1#1) [C:/Users/18213/Sources/Digital_Lab/Calculator/src/rx.v:25]
+INFO: [Synth 8-6157] synthesizing module 'Writer' [C:/Users/18213/Sources/Digital_Lab/Calculator/src/tx.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/18213/Sources/Digital_Lab/Calculator/src/tx.v:112]
+INFO: [Synth 8-6155] done synthesizing module 'Writer' (2#1) [C:/Users/18213/Sources/Digital_Lab/Calculator/src/tx.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Calculator' [C:/Users/18213/Sources/Digital_Lab/Calculator/src/Calculator.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/18213/Sources/Digital_Lab/Calculator/src/Calculator.v:97]
+WARNING: [Synth 8-151] case item 6'b001110 is unreachable [C:/Users/18213/Sources/Digital_Lab/Calculator/src/Calculator.v:149]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/18213/Sources/Digital_Lab/Calculator/src/Calculator.v:149]
+WARNING: [Synth 8-4767] Trying to implement RAM ' ' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
 	1: Write port has constant address. 
 	2: Unable to determine number of words or word size in RAM. 
 	3: No valid read/write found for RAM. 
 RAM dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'in_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
 Reason is one or more of the following :
 	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
 	2: Unable to determine number of words or word size in RAM. 
 	3: No valid read/write found for RAM. 
 RAM "in_reg" dissolved into registers
-INFO: [Synth 8-6155] done synthesizing module 'Calculator' (3#1) [D:/Source/Vivado Projects/Calculator/src/Calculator.v:3]
-INFO: [Synth 8-6157] synthesizing module 'Translator' [D:/Source/Vivado Projects/Calculator/src/Translator.v:3]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Source/Vivado Projects/Calculator/src/Translator.v:39]
-INFO: [Synth 8-6155] done synthesizing module 'Translator' (4#1) [D:/Source/Vivado Projects/Calculator/src/Translator.v:3]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Source/Vivado Projects/Calculator/src/Top.v:44]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Source/Vivado Projects/Calculator/src/Top.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'Calculator' (3#1) [C:/Users/18213/Sources/Digital_Lab/Calculator/src/Calculator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Translator' [C:/Users/18213/Sources/Digital_Lab/Calculator/src/Translator.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/18213/Sources/Digital_Lab/Calculator/src/Translator.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'Translator' (4#1) [C:/Users/18213/Sources/Digital_Lab/Calculator/src/Translator.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/18213/Sources/Digital_Lab/Calculator/src/Top.v:44]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/18213/Sources/Digital_Lab/Calculator/src/Top.v:65]
+WARNING: [Synth 8-4767] Trying to implement RAM 'input_array_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
 Reason is one or more of the following :
 	1: RAM has too many ports (16). Maximum supported = 16. 
 	2: Unable to determine number of words or word size in RAM. 
 	3: No valid read/write found for RAM. 
 RAM "input_array_reg" dissolved into registers
-INFO: [Synth 8-6155] done synthesizing module 'Top' (5#1) [D:/Source/Vivado Projects/Calculator/src/Top.v:3]
+WARNING: [Synth 8-3848] Net rst in module/entity Top does not have driver. [C:/Users/18213/Sources/Digital_Lab/Calculator/src/Top.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Top' (5#1) [C:/Users/18213/Sources/Digital_Lab/Calculator/src/Top.v:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1129.562 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1244.961 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1129.562 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1244.961 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1129.562 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1244.961 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1129.562 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1244.961 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/Source/Vivado Projects/Calculator/src/fpgaol_uart.xdc]
-Finished Parsing XDC File [D:/Source/Vivado Projects/Calculator/src/fpgaol_uart.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Source/Vivado Projects/Calculator/src/fpgaol_uart.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Parsing XDC File [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'd[0]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'd[1]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'd[2]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'd[3]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn'. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.srcs/constrs_1/new/fpgaol_2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1129.562 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1276.914 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1129.562 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1276.914 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1129.562 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1276.914 ; gain = 31.953
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1129.562 ; gain = 0.000
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1276.914 ; gain = 31.953
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1129.562 ; gain = 0.000
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1276.914 ; gain = 31.953
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Top'
-WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [D:/Source/Vivado Projects/Calculator/src/Calculator.v:50]
-WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [D:/Source/Vivado Projects/Calculator/src/Top.v:45]
-WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [D:/Source/Vivado Projects/Calculator/src/Top.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'next_state_reg' [C:/Users/18213/Sources/Digital_Lab/Calculator/src/Calculator.v:50]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [C:/Users/18213/Sources/Digital_Lab/Calculator/src/Top.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [C:/Users/18213/Sources/Digital_Lab/Calculator/src/Top.v:45]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -119,9 +195,9 @@ WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' 
      Check_End_Of_Output |                    1000000000000 |                            00111
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Top'
-WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [D:/Source/Vivado Projects/Calculator/src/Top.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [C:/Users/18213/Sources/Digital_Lab/Calculator/src/Top.v:45]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1129.562 ; gain = 0.000
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1276.914 ; gain = 31.953
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -168,22 +244,21 @@ Detailed RTL Component Info :
 	  37 Input    6 Bit        Muxes := 1     
 	   2 Input    5 Bit        Muxes := 5     
 	  13 Input    5 Bit        Muxes := 1     
-	   2 Input    4 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 6     
 	  31 Input    4 Bit        Muxes := 2     
-	  10 Input    4 Bit        Muxes := 1     
+	   8 Input    4 Bit        Muxes := 1     
 	  31 Input    3 Bit        Muxes := 1     
 	   2 Input    3 Bit        Muxes := 1     
 	   2 Input    2 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 86    
-	   3 Input    1 Bit        Muxes := 2     
-	   8 Input    1 Bit        Muxes := 71    
+	   2 Input    1 Bit        Muxes := 87    
+	   3 Input    1 Bit        Muxes := 3     
+	   8 Input    1 Bit        Muxes := 72    
 	  11 Input    1 Bit        Muxes := 4     
 	  30 Input    1 Bit        Muxes := 8     
 	  31 Input    1 Bit        Muxes := 11    
 	   5 Input    1 Bit        Muxes := 1     
 	  37 Input    1 Bit        Muxes := 1     
 	   7 Input    1 Bit        Muxes := 3     
-	  10 Input    1 Bit        Muxes := 1     
 	  13 Input    1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -200,6 +275,7 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 DSP Report: Generating DSP p_0_out, operation Mode is: A2*B2.
 DSP Report: register b_reg is absorbed into DSP p_0_out.
 DSP Report: register p_0_out is absorbed into DSP p_0_out.
@@ -221,7 +297,7 @@ DSP Report: register p_0_out is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
 DSP Report: operator p_0_out is absorbed into DSP p_0_out.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1129.562 ; gain = 0.000
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1276.914 ; gain = 31.953
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -237,7 +313,7 @@ Distributed RAM: Preliminary Mapping Report (see note below)
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
 
-DSP: Preliminary Mapping Report (see note below)
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
 +------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
@@ -255,13 +331,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1142.219 ; gain = 12.656
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1276.914 ; gain = 31.953
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1146.988 ; gain = 17.426
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1333.082 ; gain = 88.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -282,7 +358,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1188.734 ; gain = 59.172
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1343.129 ; gain = 98.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -300,37 +376,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1202.344 ; gain = 72.781
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1343.129 ; gain = 98.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1202.344 ; gain = 72.781
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1343.129 ; gain = 98.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1202.344 ; gain = 72.781
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 1343.129 ; gain = 98.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1202.344 ; gain = 72.781
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 1343.129 ; gain = 98.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1202.344 ; gain = 72.781
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 1343.129 ; gain = 98.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1202.344 ; gain = 72.781
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 1343.129 ; gain = 98.168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -349,14 +425,14 @@ Report Cell Usage:
 |1     |BUFG     |     1|
 |2     |CARRY4   |   487|
 |3     |DSP48E1  |     3|
-|4     |LUT1     |   115|
-|5     |LUT2     |   322|
-|6     |LUT3     |  1359|
+|4     |LUT1     |    92|
+|5     |LUT2     |   331|
+|6     |LUT3     |  1362|
 |7     |LUT4     |   431|
-|8     |LUT5     |   322|
-|9     |LUT6     |   958|
-|10    |MUXF7    |   185|
-|11    |MUXF8    |    21|
+|8     |LUT5     |   309|
+|9     |LUT6     |   964|
+|10    |MUXF7    |   189|
+|11    |MUXF8    |    20|
 |12    |RAM32M   |     1|
 |13    |RAM32X1D |    34|
 |14    |FDCE     |     4|
@@ -367,29 +443,30 @@ Report Cell Usage:
 |19    |OBUF     |     1|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1202.344 ; gain = 72.781
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 1343.129 ; gain = 98.168
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 1202.344 ; gain = 72.781
-Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1202.344 ; gain = 72.781
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 1343.129 ; gain = 66.215
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1343.129 ; gain = 98.168
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 1206.957 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 750 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1347.988 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 753 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1219.477 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1356.652 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 54 instances were transformed.
   LD => LDCE: 19 instances
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 1 instance 
   RAM32X1D => RAM32X1D (RAMD32(x2)): 34 instances
 
-Synth Design complete, checksum: 694663ac
+Synth Design complete, checksum: 18751603
 INFO: [Common 17-83] Releasing license: Synthesis
-34 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+34 Infos, 34 Warnings, 24 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1219.477 ; gain = 89.914
-INFO: [Common 17-1381] The checkpoint 'D:/Source/Vivado Projects/Calculator/Calculator.runs/synth_1/Top.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1356.652 ; gain = 111.691
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.runs/synth_1/Top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Dec 23 13:58:51 2021...
+INFO: [Common 17-206] Exiting Vivado at Tue May 17 15:07:04 2022...

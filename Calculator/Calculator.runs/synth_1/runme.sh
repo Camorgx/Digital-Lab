@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=E:/Vivado/Vivado/2021.1/ids_lite/ISE/bin/nt64;E:/Vivado/Vivado/2021.1/ids_lite/ISE/lib/nt64:E:/Vivado/Vivado/2021.1/bin
+  PATH=C:/Xilinx/Vivado/2021.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2021.2/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2021.2/bin
 else
-  PATH=E:/Vivado/Vivado/2021.1/ids_lite/ISE/bin/nt64;E:/Vivado/Vivado/2021.1/ids_lite/ISE/lib/nt64:E:/Vivado/Vivado/2021.1/bin:$PATH
+  PATH=C:/Xilinx/Vivado/2021.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2021.2/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2021.2/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Source/Vivado Projects/Calculator/Calculator.runs/synth_1'
+HD_PWD='C:/Users/18213/Sources/Digital_Lab/Calculator/Calculator.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
