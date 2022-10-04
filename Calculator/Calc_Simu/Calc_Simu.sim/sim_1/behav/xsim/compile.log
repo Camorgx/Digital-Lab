@@ -1,8 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Source/Vivado Projects/Calculator/Calc_Simu/src/Calculator.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Calculator
-WARNING: [VRFC 10-3380] identifier 'state' is used before its declaration [D:/Source/Vivado Projects/Calculator/Calc_Simu/src/Calculator.v:12]
-WARNING: [VRFC 10-3380] identifier 'in' is used before its declaration [D:/Source/Vivado Projects/Calculator/Calc_Simu/src/Calculator.v:13]
-WARNING: [VRFC 10-3380] identifier 'c' is used before its declaration [D:/Source/Vivado Projects/Calculator/Calc_Simu/src/Calculator.v:14]
-WARNING: [VRFC 10-3380] identifier 'op_top' is used before its declaration [D:/Source/Vivado Projects/Calculator/Calc_Simu/src/Calculator.v:15]
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Source/Vivado Projects/Calculator/Calc_Simu/src/tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb

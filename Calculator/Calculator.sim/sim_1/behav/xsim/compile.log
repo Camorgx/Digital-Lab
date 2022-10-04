@@ -1,9 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Source/Vivado Projects/Calculator/src/rx.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Reader
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Source/Vivado Projects/Calculator/src/tx.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Writer
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Source/Vivado Projects/Calculator/src/Top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Top
-INFO: [VRFC 10-2458] undeclared symbol rst, assumed default net type wire [D:/Source/Vivado Projects/Calculator/src/Top.v:26]
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Source/Vivado Projects/Calculator/Calculator.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl

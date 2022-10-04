@@ -1,9 +1,0 @@
-0.7
-2020.2
-Jun 10 2021
-20:04:57
-D:/Source/Vivado Projects/20211125/20211125.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1637821894,verilog,,D:/Source/Vivado Projects/20211125/20211125.srcs/sources_1/new/test.v,,clk_wiz_0,,,../../../../20211125.gen/sources_1/ip/clk_wiz_0,,,,,
-D:/Source/Vivado Projects/20211125/20211125.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1637821894,verilog,,D:/Source/Vivado Projects/20211125/20211125.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../20211125.gen/sources_1/ip/clk_wiz_0,,,,,
-D:/Source/Vivado Projects/20211125/20211125.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
-D:/Source/Vivado Projects/20211125/20211125.srcs/sim_1/new/tb_test.v,1637822246,verilog,,,,tb,,,../../../../20211125.gen/sources_1/ip/clk_wiz_0,,,,,
-D:/Source/Vivado Projects/20211125/20211125.srcs/sources_1/new/test.v,1637822152,verilog,,D:/Source/Vivado Projects/20211125/20211125.srcs/sim_1/new/tb_test.v,,test,,,../../../../20211125.gen/sources_1/ip/clk_wiz_0,,,,,
